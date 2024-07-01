@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lexend:wght@100;200;300;400;500;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Lexend', sans-serif;
+}
+
+::-webkit-scrollbar{
+    width: 9px;
+    
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(234, 234, 234);
+    border-radius: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: grey;
+    border-radius: 20px;
+    background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: rgb(84, 84, 84);
+}
+
+.sec1 {
+    background-image: linear-gradient(to top, rgba(17, 19, 24, 0.959), rgba(51, 63, 86, 0.541)), url(./bg.jpg);
+    background-size: cover;
+    --tw-gradient-to: rgb(22 28 45 / 0.5);
+    --tw-gradient-stops: var(rgb(22 28 45 / 0.5)), rgb(22 28 45 / 0.75), var(rgb(22 28 45 / 0.5))
+}
+
+.dropdown-1 {
+    visibility: hidden;
+}
+
+.main-ul>li:hover .dropdown-1 {
+    visibility: visible;
+}
+
+.dropdown-1>ul>li::before {
+    position: absolute;
+    content: "";
+    width: 0px;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    -webkit-transition: all 700ms ease;
+    background-color: rgba(94, 14, 67, 0.62);
+}
+
+.dropdown-1>ul>li:hover::before {
+    background-color: transparent;
+    width: 100%;
+}
+.shadow-div::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 450%;
+    top: -270%;
+    box-shadow: 0px 0px 300px 10px white;
+    left: 0px;
+    bottom: 0px;
+    transform: rotate(50deg);
+}
+.about-img:hover .shadow-div::after{
+    -webkit-transition: all 1.5s ease;
+    background-color: transparent;
+    left: 100%;
+    top: 100%;
+    
+}
+.btn-div:hover i{
+    margin-left: 20px;
+}
+
+.linear-h1{
+    background: -webkit-linear-gradient( rgba(0, 25, 213, 0.76),rgb(247, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.polygone{
+    clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
+}
+
+.team-card-1{
+    box-shadow: 0px 0px 20px 1px rgba(0, 0, 0, 0.154);
+}   
+
+::placeholder{
+    color: slategrey;
+}
