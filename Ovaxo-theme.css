@@ -54,7 +54,7 @@
 .dropdown-1>ul>li:hover::before {
     -webkit-transition: all 700ms ease;
     background-color: transparent;
-    left: 100%;
+    
     width: 100%;
 }
 .shadow-div::after{
