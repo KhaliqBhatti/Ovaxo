@@ -48,12 +48,13 @@
     height: 100%;
     top: 0px;
     left: 0px;
-    background-color: rgba(94, 14, 67, 0.62);
+    background-color: rgba(135, 21, 97, 0.51);
 }
 
 .dropdown-1>ul>li:hover::before {
     -webkit-transition: all 700ms ease;
     background-color: transparent;
+    left: 100%;
     width: 100%;
 }
 .shadow-div::after{
